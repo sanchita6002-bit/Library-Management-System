@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library Managemet website</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+   <!--Header  / Navbar-->
+    <header>
+
+        <nav class="navbar section-content">
+            <a href="a" class="nav-logo">
+                <h2 class="logo-text">📚 WISHPERING PAGES       </h2>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="#books" class="nav-link">Book list</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#rent" class="nav-link">Rent Book Form</Form></a>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- hero section -->
+        <section class="hero-section">
+          <div class="section-content">
+            <div class="hero-details">
+                <h2 class="title">Best Books</h2>
+                <h3 class="subtitle">So many books so little time!</h3>
+                <p class="description">Welcome to our library!  Your journey into knowledge starts here. Explore ,Learn  Create."</p>
+
+                <div class="buttons">
+                    <a href="#books" class="button read-now"> Read now</a>
+                    
+            </div>
+          </div>
+       
+        </section>
+          <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="about-container">
+                <!-- Left Image -->
+                <div class="about-image">
+                    <img src="images/b.jpeg" alt="Library Image">
+                </div>
+                <!-- Right Text -->
+                <div class="about-text">
+                    <h2>About Our Library</h2>
+                    <p>Welcome to <strong>Whispering Pages</strong>, where books meet imagination! Our library is dedicated to creating a cozy, inspiring space for readers of all ages. Here, you can explore thousands of books spanning literature, technology, science, and more.</p>
+                    <p>We believe knowledge is the gateway to creativity, growth, and opportunity. Whether you're here to read, study, or rent books, we promise a welcoming and enriching experience. Join our community of curious minds and let your journey begin!</p>
+                    <p>Discover new worlds, revisit classics, and find your next favorite book at <strong>Whispering Pages</strong>!</p>
+                </div>
+            </div>
+        </section>
+    
+
+
+        <!-- Book List Section -->
+<section class="books-section" id="books">
+    <h2 class="section-title">📖 Popular Novels</h2>
+
+    <div class="books-container">
+
+        <!-- Book 1 -->
+        <div class="book-card">
+            <img src="images/image/harry.jpeg" alt="Harry Potter">
+            <h3>Harry Potter</h3>
+            <p>J.K. Rowling</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn" on click="openRentForm('Harry Potter','J.K.Rowling')">Rent</button>
+            </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+            <img src="images/image/alchemist.jpeg" alt="The Alchemist">
+            <h3>The Alchemist</h3>
+            <p>Paulo Coelho</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+            <img src="images/pride.jpeg" alt="Pride and Prejudice">
+            <h3>Pride & Prejudice</h3>
+            <p>Jane Austen</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+            <img src="images/image/1984.jpg" alt="1984">
+            <h3>1984</h3>
+            <p>George Orwell</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+    </div>
+    <h2 class="section-title">💻 BCA Special Books</h2>
+
+    <div class="books-container">
+
+        <div class="book-card">
+            <img src="images/image/cpro .jpeg" alt="C Programming">
+            <h3>C Programming</h3>
+            <p>E. Balagurusamy</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="images/image/java.jpeg" alt="Java Programming">
+            <h3>Java Programming</h3>
+            <p>Herbert Schildt</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="images/dbms.jpeg" alt="DBMS">
+            <h3>DBMS</h3>
+            <p>Korth & Silberschatz</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+
+        <div class="book-card">
+            <img src="images/image/os.jpeg" alt="Operating System">
+            <h3>Operating System</h3>
+            <p>Galvin</p>
+            <div class="book-buttons">
+                <button class="read-btn">Read</button>
+                <button class="rent-btn">Rent</button>
+            </div>
+        </div>
+        
+    </div>
+
+</section>
+<!-- Rent Book Form Section -->
+<section class="rent-book-section" id="rent-book-form" style="display: none;">
+    <h2 class="section-title">📚 Rent a Book</h2>
+    <form id="rentForm">
+        <!-- Student Details -->
+        <h3>Student Details</h3>
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+
+        <label for="studentClass">Class:</label>
+        <input type="text" id="studentClass" name="studentClass" required>
+
+        <label for="studentEmail">Email ID:</label>
+        <input type="email" id="studentEmail" name="studentEmail" required>
+
+        <label for="studentAddress">Address:</label>
+        <textarea id="studentAddress" name="studentAddress" required></textarea>
+
+        <label for="studentPhone">Phone:</label>
+        <input type="tel" id="studentPhone" name="studentPhone" required>
+
+        
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+
+    </main>
+    <script src="script.js"></script>
+
+    <!-- Success Message Popup -->
+<div id="successMessage" class="success-popup">
+    <div class="popup-content">
+        <h2>📚 Book Rented Successfully!</h2>
+        <p>Thank you! Your rent request has been submitted.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        
+        
+
+        <!-- Center -->
+        <div class="footer-center">
+            <h2 class="footer-logo">Whispering Pages</h2>
+            <p class="footer-address">
+                Near City Library Road,<br>
+                Knowledge Park,<br>
+                Your City, India
+            </p>
+             <p class="footer-phone">📞 +91 98765 43210</p>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
